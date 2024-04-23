@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f4f4f4;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #3498dbaa
+}
+
+.button:hover {
+    background: #3498dbcc;
+}

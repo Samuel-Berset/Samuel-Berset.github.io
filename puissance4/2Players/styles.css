@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.button {
+    /*margin-top: 50px;*/
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f4f4f4;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #f06dffaa
+}
+
+.button:hover {
+    background: #f06dffcc;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: center;
+    /*margin-bottom: 30px;*/
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 50px;
+}
+
+#red {
+    background-color: #ce0000;
+}
+
+#yellow {
+    background-color: #f3e300;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(6, 40px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    background: #0044ffee;
+    border: 5px solid #0044ffee;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.cell.empty {
+    background-color: #eee;
+}
+
+.cell.red {
+    background-color: #ce0000;
+}
+
+.cell.yellow {
+    background-color: #f3e300;
+}
+
+#winner {
+    border: 2px solid #00ff00;
+}

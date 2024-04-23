@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*background: #79c3f5aa*/
+}
+
+
+.button {
+    margin-top: 50px;
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f4f4f4;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #3498dbaa
+}
+
+.button:hover {
+    background: #3498dbcc;
+}
+
+#board {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    background: #000;
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    /*border: 1px solid #fff;*/
+    background: #fff;
+    cursor: pointer;
+}
+
+#cellWinner {
+    background: #98fdae;
+}

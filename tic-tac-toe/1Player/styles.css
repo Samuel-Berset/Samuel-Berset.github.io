@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.containButtonIA {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    /*background: #79c3f5aa*/
+}
+
+.button {
+    /*margin-top: 50px;*/
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #3498dbaa
+}
+
+.button:hover {
+    background: #3498dbcc;
+}
+
+.buttonIA {
+    /*margin-top: 50px;*/
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f4f4f4;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #7fdb34aa
+}
+
+.buttonIA:hover {
+    background: #7fdb34cc;
+}
+
+.easyButton {
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #3498dbaa
+}
+
+.easyButton:hover {
+    background: #3498dbcc;
+}
+
+.hardButton {
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #3498dbaa
+}
+
+.hardButton:hover {
+    background: #3498dbcc;
+}
+
+#clicked {
+    border: 2px solid #ff0000;
+}
+
+#board {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    background: #000;
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    /*border: 1px solid #fff;*/
+    background: #fff;
+    cursor: pointer;
+}
+
+#cellWinner {
+    background: #98fdae;
+}
+
+#pressDifficulty {
+    background: #3498dbff;
+}

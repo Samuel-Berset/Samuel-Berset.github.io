@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #141414;
+}
+
+h1 {
+    color: #eee;
+}
+
+.button {
+    /*margin-top: 50px;*/
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px 30px; /* Augmentation de la taille du bouton */
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f4f4f4;
+    border-radius: 8px; /* Augmentation du rayon de la bordure */
+    text-align: center; /* Centrage du texte à l'intérieur du bouton */
+    /*line-height: 10; /* Ajustement de la hauteur de ligne pour centrer verticalement */
+    background: #75f858aa
+}
+
+.button:hover {
+    background: #75f858cc;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: center;
+    /*margin-bottom: 30px;*/
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333333;
+    display: flex;
+    border-radius: 50px;
+}
+
+#red {
+    background-color: #ce0000;
+}
+
+#green {
+    background-color: #18ce00;
+}
+
+#blue {
+    background-color: #00a3ee;
+}
+
+#yellow {
+    background-color: #f3e300;
+}
+#purple {
+    background-color: #8700d4;
+}
+
+#orange {
+    background-color: #e76800;
+}
+
+#white {
+    background-color: #ccc;
+}
+
+#pink {
+    background-color: #ff00f2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /*background-color: #141414;*/
+    background-color: #141414;
+}
+
+#gameBoard {
+    display: flex;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 35px);
+    grid-template-rows: repeat(12, 40px);
+    grid-gap: 5px;
+    margin: 10px auto;
+    background: #141414;
+    border: 1px solid #141414;
+    
+}
+
+#verif {
+    display: grid;
+    grid-template-columns: repeat(4, 7px);
+    grid-template-rows: repeat(12, 40px);
+    grid-gap: 5px;
+    margin: 10px auto;
+    background: #141414;
+    border: 10px solid #141414;
+    
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #444444;
+}
+
+.verifCell.grey {
+    background-color: #444444;
+}
+
+.verifCell.red {
+    background-color: #ce0000;
+}
+
+.verifCell.white {
+    background-color: #fff;
+}
+
+.verifCell {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+#winner {
+    border: 2px solid #00ff00;
+}
